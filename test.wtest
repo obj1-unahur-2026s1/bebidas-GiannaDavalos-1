@@ -1,0 +1,17 @@
+import bebidas.*
+import tito.*
+
+describe "Test de tito" {
+  test "Tito consume 10 de whisky y su sustancia actual es whisky" {
+    tito.consumir(10, whisky)
+    assert.equals(whisky, tito.sustanciaActual())
+    // assert.equals(1,1) -> devueleve true
+    // assert.equals(1,2) -> devuelve false
+  }
+
+  test "Tito consume 10 de whisky y su dosis consumida es 10" {
+    tito.consumir(10, whisky)
+    assert.equals(10, tito.dosisConsumida())
+}
+}
+
